@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['dagnydare.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'sortingCans.apps.SortingcansConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
