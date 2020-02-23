@@ -15,12 +15,12 @@
   <br>
   <br>
   <br>
-  {% load static %} <img src="{% static "banana.png" %}" alt="Hi!" width="150" height="150" draggable="true" />
+  <img src='{% all_compost.filepath %}' alt="Hi!" width="150" height="150" draggable="true" id="drag1" />
 
   <div class="container bottom" style="position: fixed; bottom: 0; display: flex; text-align: center; justify-content: center; ">
     <div class="row">
       <div class="col-sm">
-              {% load static %} <img src="{% static "recycling-bin.png" %}" alt="Hi!" width="250" height="250" />
+              {% load static %} <img src={% "recycling-bin.png" %} alt="Hi!" width="250" height="250" />
       </div>
       <div class="col-sm">
             {% load static %} <img src="{% static "recycling-bin.png" %}" alt="Hi!" width="250" height="250"/>

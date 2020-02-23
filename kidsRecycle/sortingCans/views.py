@@ -9,6 +9,7 @@ def index(request):
     all_recycle = Recycle.objects.all()
     all_trash = Trash.objects.all()
     all_compost = Compost.objects.all()
+    compost_pics = all
     template = loader.get_template('sortingCans/index.html')
     context = {
         'all_recycle': all_recycle,
