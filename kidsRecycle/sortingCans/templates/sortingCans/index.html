@@ -1,20 +1,35 @@
-
-
-<!--DOCTYPE HTML -->
-<html>
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
 <HEAD>
-<!--- BOOTSTRAP CDN-->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!--- BOOTSTRAP CDN-->
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'sortingCans/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'js/app.js'%}">
 </HEAD>
-<body>
-  <h1>kids recycle template>/h1>
-  </body>
-  </html>
+<body style="background-color: #86CD99">
+
+  <nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1">Can kids recycle?</span>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  {% load static %} <img src="{% static "banana.png" %}" alt="Hi!" width="150" height="150" draggable="true" />
+
+  <div class="container bottom" style="position: fixed; bottom: 0; display: flex; text-align: center; justify-content: center; ">
+    <div class="row">
+      <div class="col-sm">
+              {% load static %} <img src="{% static "recycling-bin.png" %}" alt="Hi!" width="250" height="250" />
+      </div>
+      <div class="col-sm">
+            {% load static %} <img src="{% static "recycling-bin.png" %}" alt="Hi!" width="250" height="250"/>
+      </div>
+      <div class="col-sm">
+            {% load static %} <img src="{% static "recycling-bin.png" %}" alt="Hi!" width="250" height="250"/>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
