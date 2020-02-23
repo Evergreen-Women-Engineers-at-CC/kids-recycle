@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <HEAD>
   {% load static %}
-
+  {% load mytags %}
   <link rel="stylesheet" type="text/css" href="{% static 'sortingCans/css/bootstrap.css' %}">
   <link rel="stylesheet" href="{% static 'js/app.js'%}">
 </HEAD>
@@ -16,8 +16,11 @@
   <br>
   <br>
   <br>
-
- <img src='(% compost.filepath %}' alt="Hi!" width="150" height="150" draggable="true" id="drag1" />
+  <!-- this is what is saying "bread" -->
+  <!-- its pulling name attribute instread of filepath attribute -->
+  <p>{{ compost_pic }}</p>
+<!-- this doesnt work but it should be something like this -->
+ <img src="{{ Compost.filepath }}" alt="Hi!" width="150" height="150" draggable="true" id="drag1" />
 
   <div class="container bottom" style="position: fixed; bottom: 0; display: flex; text-align: center; justify-content: center; ">
     <div class="row">
